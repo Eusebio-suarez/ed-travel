@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ed-travel</title>
+  <link rel="stylesheet" href="styles/style.css" />
+  <link rel="icon" href="Assets/icons/icono.png" />
+</head>
+<body>
+  <header>
+    <div class="header-izquierdo">
+      <h1>Ed-travel</h1>
+      <nav class="navegacion" aria-label="Navegación principal">
+        <a class="navIcono" href="#">
+          <img src="Assets/icons/avion.png" alt="Icono de avión" />
+          <span>Vuelos</span>
+        </a>
+        <a class="navIcono" href="#">
+          <img src="Assets/icons/carro.png" alt="Icono de carro" />
+          <span>Alquiler de carros</span>
+        </a>
+        <a class="navIcono" href="#">
+          <img src="Assets/icons/libro-abierto.png" alt="Icono de libro" />
+          <span>Librerías</span>
+        </a>
+      </nav>
+    </div>
+    <div class="logo">
+      <img src="Assets/icons/icono.png" alt="Logo Ed-travel" />
+    </div>
+  </header>
+
+  <section class="reserva">
+    <div class="desplegableCiudad">
+      <label for="ciudades">Destino:</label>
+      <select name="ciudades" id="ciudades">
+        <option value="">Ciudades de destino</option>
+        <option value="barranquilla">Barranquilla</option>
+        <option value="bucaramanga">Bucaramanga</option>
+        <option value="cali">Cali</option>
+        <option value="cartagena">Cartagena</option>
+        <option value="cucuta">Cúcuta</option>
+        <option value="ibague">Ibagué</option>
+        <option value="ipiales">Ipiales</option>
+        <option value="manizales">Manizales</option>
+        <option value="medellin">Medellín</option>
+        <option value="pereira">Pereira</option>
+        <option value="popayan">Popayán</option>
+        <option value="san-andres">San Andrés</option>
+        <option value="santa-marta">Santa Marta</option>
+      </select>
+    </div>
+
+    <div class="calendario-salida">
+      <label for="salida">Día de salida:</label>
+      <input type="date" id="salida" />
+    </div>
+
+    <div class="calendario-regreso">
+      <label for="regreso">Día de regreso:</label>
+      <input type="date" id="regreso" />
+    </div>
+
+    <div class="cantidad-personas">
+      <label for="cantidad">Cantidad de personas:</label>
+      <select name="cantidad" id="cantidad">
+        <option value="">Seleccione</option>
+        <option value="1">1 persona</option>
+        <option value="2">2 personas</option>
+        <option value="3">3 personas</option>
+        <option value="4">4 personas</option>
+        <option value="5">5 personas</option>
+      </select>
+    </div>
+  </section>
+
+  <main>
+    <div class="container-city">
+      <div class="city">
+        <div class="container-texto"><p class="texto">Barranquilla</p></div>
+        <img class="img-city" src="Assets/images/barranquilla.jpg" alt="Vista de Barranquilla" />
+      </div>
+      <div class="city">
+        <div class="container-texto"><p class="texto">Bucaramanga</p></div>
+        <img class="img-city" src="Assets/images/bucaramanga.jpg" alt="Vista de Bucaramanga" />
+      </div>
+      <div class="city">
+        <div class="container-texto"><p class="texto">Cali</p></div>
+        <img class="img-city" src="Assets/images/cali.jpg" alt="Vista de Cali" />
+      </div>
+      <div class="city">
+        <div class="container-texto"><p class="texto">Cartagena</p></div>
+        <img class="img-city" src="Assets/images/cartagena.jfif" alt="Vista de Cartagena" />
+      </div>
+      <div class="city">
+        <div class="container-texto">
+            <p class="texto">cucuta</p>            
+        </div>
+        <img  class="img-city"src="Assets/images/cucuta.jpg" alt="cucuta">
+      </div>
+      <div class="city">
+          <div class="container-texto">
+          <p class="texto">ibague</p>          
+      </div>
+        <img  class="img-city"src="Assets/images/ibague.jfif" alt="ibague">
+      </div>
+      <div class="city">
+          <div class="container-texto">
+              <p class="texto">ipiales</p>          
+          </div>
+          <img  class="img-city"src="Assets/images/ipiales.jfif" alt="ipiales">
+      </div>
+      <div class="city">
+          <div class="container-texto">
+              <p class="texto">manizales</p>          
+          </div>
+          <img  class="img-city"src="Assets/images/manizales.jfif" alt="manizales">
+      </div>
+      <div class="city">
+          <div class="container-texto">
+              <p class="texto">medellin</p>        
+          </div>
+          <img class="img-city" src="Assets/images/medellin.jfif" alt="medellin">
+      </div>
+      <div class="city">
+          <div class="container-texto">
+              <p class="texto">pereira</p>      
+          </div>
+          <img class="img-city"src="Assets/images/pereira.jpg" alt="pereira">
+      </div>
+      <div class="city">
+          <div class="container-texto">
+              <p class="texto">popayan</p>    
+          </div>
+          <img  class="img-city"src="Assets/images/popayan.jpg" alt="popayan">
+      </div>
+      <div class="city">
+          <div class="container-texto">
+              <p class="texto">san andres</p>   
+          </div>
+          <img class="img-city"src="Assets/images/san andres.jfif" alt="san-andres">
+      </div>
+      <div class="city">
+          <div class="container-texto">
+              <p class="texto">santa marta</p>
+          </div>
+          <img src="Assets/images/santa marta.jpg" alt="santa-marta">
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-icons">
+      <a class="icons" href="#"><img src="Assets/icons/whatssap.png" alt="WhatsApp" /></a>
+      <a class="icons" href="#"><img src="Assets/icons/facebook.png" alt="Facebook" /></a>
+      <a class="icons" href="#"><img src="Assets/icons/instagram.png" alt="Instagram" /></a>
+      <a class="icons" href="#"><img src="Assets/icons/linkedin.png" alt="LinkedIn" /></a>
+    </div>
+  </footer>
+</body>
+</html>
