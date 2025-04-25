@@ -176,4 +176,99 @@
   
   .icons img:hover {
     transform: scale(1.2);
-  }    
+  }
+  
+  /* ----------- RESPONSIVE DESIGN ----------- */
+
+/* Tablets (pantallas menores a 992px) */
+@media (max-width: 991px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 20px;
+      gap: 15px;
+    }
+  
+    .navegacion {
+      justify-content: center;
+      width: 100%;
+      flex-wrap: wrap;
+    }
+  
+    .reserva {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .reserva > div {
+      width: 100%;
+      justify-content: center;
+    }
+  
+    .city {
+      width: 45%;
+    }
+  }
+  
+  /* Smartphones (pantallas menores a 768px) */
+  @media (max-width: 767px) {
+    .header-izquierdo {
+      align-items: center;
+      width: 100%;
+    }
+  
+    h1 {
+      text-align: center;
+      font-size: 22px;
+    }
+  
+    .logo img {
+      width: 60px;
+      height: 60px;
+    }
+  
+    .navIcono {
+      font-size: 13px;
+      padding: 6px 10px;
+    }
+  
+    .reserva {
+      padding: 15px 10px;
+      gap: 10px;
+    }
+  
+    .reserva > div {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    select, input[type="date"] {
+      width: 90%;
+      font-size: 13px;
+    }
+  
+    main {
+      padding: 20px 10px;
+    }
+  
+    .container-city {
+      gap: 20px;
+    }
+  
+    .city {
+      width: 90%;
+    }
+  
+    .container-texto {
+      font-size: 16px;
+      height: 50px;
+    }
+  
+    .img-city {
+      height: 140px;
+    }
+  
+    .footer-icons {
+      gap: 10px;
+    }
+  }  
